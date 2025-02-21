@@ -1030,6 +1030,50 @@ button {
     margin-bottom: 1rem
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.marqueee {
+    margin-top: 7px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marqueee img {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+
+}
+
+.marqueee-content {
+    background-size: cover;
+    animation: move 10s linear infinite alternate;
+    /* تغيير الوقت حسب الحاجة */
+}
+
+@keyframes move {
+    100% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
 @media screen and (max-width:1750px) {
     #overlayImage {
         position: fixed;
@@ -1178,6 +1222,51 @@ button {
 }
 
 @media screen and (max-width:1000px) {
+
+
+
+
+    
+
+.marqueee {
+    margin-top: 7px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marqueee img {
+    display: inline-block;
+    /* استخدام inline-block لجعل العناصر بجانب بعضها */
+    width: 100px;
+    /* يمكن تعديل الارتفاع حسب الحاجة */
+}
+
+.marqueee-content {
+    background-size: cover;
+    animation: move 10s linear infinite alternate;
+    /* تغيير الوقت حسب الحاجة */
+}
+
+@keyframes move {
+    100% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+
+
+
+
+
+
+
+
     .journey__grid {
         margin-top: 0;
         display: grid;
@@ -2287,17 +2376,6 @@ hr {
 
 
 
-
-/* 
-  width:80%px;
-  height:auto;
-    background-image: url(../../logo/menu.jpg);
-   border-radius:20px;
-  background-position: center center;
-    animation: animatedBanner 100s linear infinite alternate;
-    background-size:  cover;
-  margin:10px 10px 10px 10px;
- */
 
 
 
