@@ -107,7 +107,7 @@ $(".next-menus").bind("click", function (e) {
   currentIndex = Math.min(currentIndex + 1, $(".highlight-card").length - 1);
   $(".filter-wrapper").animate({ scrollLeft: currentIndex * step });
 });
-const button = document.getElementById("myButton");
+const button = document.getElementById("myButtoon");
 const messageBox = document.getElementById("messageBox");
 button.addEventListener("click", () => {
   messageBox.classList.toggle("hidden");

@@ -14,15 +14,10 @@
 
 <body> 
 
-    
-    <audio id="splash-audio">
-        <source src="/Static/sound/start.mp3" type="audio" >
-    </audio>
+
     <div id="splash-screen">
         <img src="./../../Static/images/اساسيات/start4.png" alt="شعار الموقع">
     </div>
-
-
 
     <div class="sidebar">
 
@@ -61,51 +56,21 @@
 
             <div class="main-highlight">
 
-                <div class="main-header">
-                    <div class="main-arrow">
-                        <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
-                        <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                  <div class="marqueee">
+                    <div class="marqueee-content">
+                        <img src="./Static/images/ام علي.jpeg" alt="Image 1">
+                        <img src="./Static/images/سموزي بطيخ.webp" alt="Image 2">
+                        <img src="./Static/images/شـــــــاي.webp" alt="Image 3">
+                        <img src="./Static/images/فـــرابتشينو بـندق.jpg" alt="Image 4">
+                        <img src="./Static/images/قهـــوة تــركــي.jpg" alt="Image 5">
+                        <img src="./Static/images/قهوة بندق.webp" alt="Image 6">
+                        <img src="./Static/images/مــولــتن كيــك.jpg" alt="Image 7">
+                        <img src="./Static/images/مهيتــو بلـــوبيـــري.jpg" alt="Image 8">
+                        <img src="./Static/images/مهيتو كلاسيك.jpg" alt="Image 9">
+                        <img src="./Static/images/ميكس فروت.jpg" alt="Image 10">
                     </div>
-                    <h2 class="main-title"> اقتراحات لطلبك</h2>
                 </div>
-                <div class="highlight-wrapper">
 
-                    <div class="highlight-card">
-                        <img class="highlight-img" src="./Static/images/قهوة فرنساوي.jpg">
-                        <div class="highlight-desc">
-                            <div class="menu-item" ><h4 id="Home_type_1"></h4> <p id="Home_prise_1"></p></div>
-                        </div>
-                    </div>  
-
-                    <div class="highlight-card">
-                        <img class="highlight-img" src="./Static/images/ميــــاه.webp">
-                        <div class="highlight-desc">
-                            <div class="menu-item" ><h4 id="Home_type_2"></h4> <p id="Home_prise_2"></p></div>
-                        </div>
-                    </div>
-
-                    <div class="highlight-card">
-                        <img class="highlight-img" src="./Static/images/شـــــــاي.webp">
-                        <div class="highlight-desc">
-                            <div class="menu-item" ><h4 id="Home_type_3"></h4> <p id="Home_prise_3"></p></div>
-                        </div>
-                    </div>
-
-                    <div class="highlight-card">
-                        <img class="highlight-img" src="./Static/images/شوكليت كيك.jpg">
-                        <div class="highlight-desc">
-                            <div class="menu-item" ><h4 id="Home_type_4"></h4> <p id="Home_prise_4"></p></div>
-                        </div>
-                    </div>
-
-                    <div class="highlight-card">
-                        <img class="highlight-img" src="./Static/images/ميكس فروت.jpg">
-                        <div class="highlight-desc">
-                            <div class="menu-item" ><h4 id="Home_type_5"></h4> <p id="Home_prise_5"></p></div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
 
             <div class="main-highlight">
@@ -250,15 +215,15 @@
         </div>
     <!----------------------------->
         <div class="dilevry">
-            <h5 class="myButton" ><a href="./Front-end/Pages/Profile.html" ><ion-icon name="people-circle-outline" style="position: relative; top: 7px; font-size: 30px;"></ion-icon> Profile</a> </h5>
-            <h5 class="myButton"  id="myButton"><ion-icon name="call-outline" style="position: relative; top: 7px; font-size: 25px;"></ion-icon> رقم الكافيه </h5>
+            <h5 class="myButton"  id="myButtoon"><ion-icon name="call-outline" style="position: relative; top: 7px; font-size: 25px;"></ion-icon> رقم الكافيه </h5>
             <h5 id="showImage" class="myButton-1"><ion-icon name="qr-code" style="position: relative; top: 7px; font-size: 30px;"></ion-icon> الكيو ار كود </h5>
             <h5 class="myButton" ><a id="download-button" href="./Static/Egyptian Burger.apk" downloadstyle="position: relative; top: 7px; font-size: 25px;"> تنزيل التطبيق </a> </h5>
+            <h5 class="myButton" ><a href="./Front-end/Pages/Profile.html" ><ion-icon name="people-circle-outline" style="position: relative; top: 7px; font-size: 30px;"></ion-icon> Profile</a> </h5>
 
             <div id="messageBox" class="hidden">
                 <h3 class="phonesnum" id="phonesnum1">ارقام التواصل للشكاوي والأستفسارات</h3>
                 <br>
-                <h3  class="phonesnum" id="phonesnum"> 01147182463 </h3>
+                <h3  class="phonesnum" > 01147182463 </h3>
                 
         </div>
 
@@ -274,7 +239,7 @@
 
     <!------------------------------------------------------------>
     
-    <img src="./Static/images/اساسيات/QRCode_SOZ_Caffee.png" id="overlayImage" alt="صورة عائمة" style="display: none;">
+    <img src="./Static/images/اساسيات/QRCode_Egy_Burger.png" id="overlayImage" alt="صورة عائمة" style="display: none;">
     <a href="./Front-end/Pages/order.html"><div class="counter"><span> عدد العناصر المحددة: 0 </span><ion-icon name="cart-outline" class="icon-1"></ion-icon></div></a>
 
     </div>
@@ -291,41 +256,26 @@
             // استدعاء البيانات من الصفوف
             const details = json.table.rows.map(row => row.c[0] ? row.c[0].v : 'غير متوفر');
 
-            // وضع القيم في العناصر المناسبة
-            document.getElementById('Home_type_1').innerText = details[2]; 
-            document.getElementById('Home_prise_1').innerText = details[3];
-            document.getElementById('Home_type_2').innerText = details[4]; 
-            document.getElementById('Home_prise_2').innerText = details[5]; 
-            document.getElementById('Home_type_3').innerText = details[6];
-            document.getElementById('Home_prise_3').innerText = details[7]; 
-            document.getElementById('Home_type_4').innerText = details[8]; 
-            document.getElementById('Home_prise_4').innerText = details[9]; 
-            document.getElementById('Home_type_5').innerText = details[10]; 
-            document.getElementById('Home_prise_5').innerText = details[11]; 
+            document.getElementById('marquee').innerText = details[0];
 
-            document.getElementById('offer_1').innerText = details[12]; 
-            document.getElementById('offer_content_1').innerText = details[13]; 
-            document.getElementById('offer_2').innerText = details[14]; 
-            document.getElementById('offer_content_2').innerText = details[15]; 
-            document.getElementById('offer_3').innerText = details[16]; 
-            document.getElementById('offer_content_3').innerText = details[17]; 
+            document.getElementById('offer_1').innerText = details[1]; 
+            document.getElementById('offer_content_1').innerText = details[2];
+            document.getElementById('offer_2').innerText = details[3]; 
+            document.getElementById('offer_content_2').innerText = details[4]; 
+            document.getElementById('offer_3').innerText = details[5];
+            document.getElementById('offer_content_3').innerText = details[6]; 
 
-            document.getElementById('event_title_1').innerText = details[18]; 
-            document.getElementById('event_title_2').innerText = details[19]; 
-            document.getElementById('event_content').innerText = details[20]; 
+            document.getElementById('event_title_1').innerText = details[7]; 
+            document.getElementById('event_title_2').innerText = details[8]; 
+            document.getElementById('event_content').innerText = details[9];
 
-            document.getElementById('phonesnum1').innerText = details[21]; 
-            document.getElementById('phonesnum').innerText = details[22]; 
+            document.getElementById('phonesnum1').innerText = details[10]; 
 
-            document.getElementById('marquee').innerText = details[23];
+
 
         }
 
         fetchDetails();
-
-
-
-
 
         window.addEventListener('load', () => {
         const splashScreen = document.getElementById('splash-screen');
@@ -355,6 +305,7 @@
         document.getElementById('download-button').addEventListener('click', (event) => {
             swal("جاري التنزيل ", "جاري تنزيل التطبيق", "success");
         });
+
     </script>
 
 </body>

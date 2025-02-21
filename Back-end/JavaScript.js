@@ -26,3 +26,17 @@ document.addEventListener("click", (event) => {
     overlayImage.style.display = "none";
   }
 });
+
+
+
+const button = document.getElementById("myButtoon");
+const messageBox = document.getElementById("messageBox");
+button.addEventListener("click", () => {
+  messageBox.classList.toggle("hidden");
+  messageBox.classList.toggle("show");
+});
+menuBtn.addEventListener("click", (e) => {
+  navLinks.classList.toggle("open");
+  const isOpen = navLinks.classList.contains("open");
+  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+});
