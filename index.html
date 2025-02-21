@@ -251,9 +251,9 @@
     <!----------------------------->
         <div class="dilevry">
             <h5 class="myButton" ><a href="./Front-end/Pages/Profile.html" ><ion-icon name="people-circle-outline" style="position: relative; top: 7px; font-size: 30px;"></ion-icon> Profile</a> </h5>
-
             <h5 class="myButton"  id="myButton"><ion-icon name="call-outline" style="position: relative; top: 7px; font-size: 25px;"></ion-icon> رقم الكافيه </h5>
             <h5 id="showImage" class="myButton-1"><ion-icon name="qr-code" style="position: relative; top: 7px; font-size: 30px;"></ion-icon> الكيو ار كود </h5>
+            <h5 class="myButton" ><a id="download-button" href="./Static/Egyptian Burger.apk" downloadstyle="position: relative; top: 7px; font-size: 25px;"> تنزيل التطبيق </a> </h5>
 
             <div id="messageBox" class="hidden">
                 <h3 class="phonesnum" id="phonesnum1">ارقام التواصل للشكاوي والأستفسارات</h3>
@@ -352,6 +352,9 @@
             });
         });
 
+        document.getElementById('download-button').addEventListener('click', (event) => {
+            swal("جاري التنزيل ", "جاري تنزيل التطبيق", "success");
+        });
     </script>
 
 </body>
