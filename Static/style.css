@@ -138,7 +138,7 @@ hr {
 
   #splash-screen img {
     width: 100vw; /* الحجم الأصلي للصورة */
-    animation: zoomAndFade 2s ; /* تشغيل تأثير zoomAndFade */
+    animation: zoomAndFade 3s ; /* تشغيل تأثير zoomAndFade */
   }
   
 
