@@ -108,3 +108,47 @@ hr {
  text-decoration: none;
 
 }
+
+
+
+
+
+
+#splash-screen {
+    position: fixed; /* يجعله ثابتًا في مكانه */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* لون الخلفية */
+    display: flex;
+    justify-content: center; /* توسيط أفقي */
+    align-items: center; /* توسيط رأسي */
+    z-index: 9999; /* يجعله فوق جميع العناصر الأخرى */
+    opacity: 1; /* اجعلها مرئية في البداية */
+    transition: opacity 3s ; /* تأثير تلاشي لمدة ثانية */
+    overflow: hidden; /* لإخفاء أي جزء من الصورة يخرج عن الحاوية أثناء التكبير */
+
+  }
+
+#splash-screen.hidden {
+    opacity: 0; /* اجعلها مخفية عند إضافة الكلاس "hidden" */
+  }
+  
+
+  #splash-screen img {
+    width: 100vw; /* الحجم الأصلي للصورة */
+    animation: zoomAndFade 2s ; /* تشغيل تأثير zoomAndFade */
+  }
+  
+
+  @keyframes zoomAndFade {
+    100% {
+      transform: scale(1); /* ابدأ بحجم أصغر */
+      opacity: 1; /* ابدأ بشفافية صفر */
+    }
+    100% {
+      transform: scale(1.1); /* وصل إلى حجم أكبر من الحجم النهائي */
+      opacity: 1; /* اجعل الصورة مرئية تماماً */
+    }
+  }

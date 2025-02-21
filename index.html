@@ -14,6 +14,16 @@
 
 <body> 
 
+    
+    <audio id="splash-audio">
+        <source src="/Static/sound/start1.mp3" type="audio" >
+    </audio>
+    <div id="splash-screen">
+        <img src="./../../Static/images/اساسيات/start.png" alt="شعار الموقع">
+    </div>
+
+
+
     <div class="sidebar">
 
         <h1 class="logo" href >Egyptian Burger</h1>
@@ -311,7 +321,37 @@
 
         }
 
-        fetchDetails(); // استدعاء الدالة لتحميل البيانات
+        fetchDetails();
+
+
+
+
+
+        window.addEventListener('load', () => {
+        const splashScreen = document.getElementById('splash-screen');
+        const img = splashScreen.querySelector('img'); // للحصول على عنصر الصورة
+
+        setTimeout(() => {
+            img.addEventListener('animationend', () => { // الاستماع لانتهاء التأثير
+            splashScreen.style.display = 'none'; // إخفاء الشاشة بعد انتهاء التأثير
+            });
+        }, 1000); // تأخير بدء التأثير (يمكنك تعديله)
+        });
+        window.addEventListener('load', () => {
+            const splashScreen = document.getElementById('splash-screen');
+            const splashAudio = document.getElementById('splash-audio');
+
+            // تشغيل الصوت عند الضغط على الشاشة
+            splashScreen.addEventListener('click', () => {
+                splashAudio.play();
+                setTimeout(() => {
+                    splashScreen.style.display = 'none';
+                    splashAudio.pause();
+                    splashAudio.currentTime = 0;
+                }, 2000);
+            });
+        });
+
     </script>
 
 </body>
