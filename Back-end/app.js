@@ -9,38 +9,7 @@ mobileOff.addEventListener("click", function () {
   mobile.classList.remove("is-active");
   mobileLink.classList.remove("active");
 });
-const highlightWrapper = document.querySelector(".highlight-wrapper");
-const highlightCards = document.querySelectorAll(".highlight-card");
-let isDragging = !1;
-let startX;
-let scrollLeft;
-highlightWrapper.addEventListener("mousedown", handleStart);
-highlightWrapper.addEventListener("touchstart", handleStart);
-highlightWrapper.addEventListener("mousemove", handleMove);
-highlightWrapper.addEventListener("touchmove", handleMove);
-highlightWrapper.addEventListener("mouseup", handleEnd);
-highlightWrapper.addEventListener("touchend", handleEnd);
-function handleStart(e) {
-  isDragging = !0;
-  if (e.type === "touchstart") {
-    startX = e.touches[0].clientX;
-  } else {
-    startX = e.clientX;
-  }
-  scrollLeft = highlightWrapper.scrollLeft;
-}
-function handleMove(e) {
-  if (!isDragging) return;
-  if (e.type === "touchmove") {
-    e.preventDefault();
-    highlightWrapper.scrollLeft = scrollLeft - (e.touches[0].clientX - startX);
-  } else {
-    highlightWrapper.scrollLeft = scrollLeft - (e.clientX - startX);
-  }
-}
-function handleEnd() {
-  isDragging = !1;
-}
+
 const scrollableContainer = document.querySelector(".filter-wrapper");
 const cards = document.querySelectorAll(".filter-card");
 let isScrolling = !1;

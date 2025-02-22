@@ -1,7 +1,7 @@
 function openWhatsApp() {
   const name = document.getElementById("name").value;
   const adress = document.getElementById("adress").value;
-  const phoneNumber = "+201040103029";
+  const phoneNumber = "+201147182463";
   const storedData = localStorage.getItem("userData");
   const dishes = JSON.parse(storedData);
   let message = `أهلاً، اسمي ${name} وأود طلب:\n`;
@@ -28,15 +28,3 @@ document.addEventListener("click", (event) => {
 });
 
 
-
-const button = document.getElementById("myButtoon");
-const messageBox = document.getElementById("messageBox");
-button.addEventListener("click", () => {
-  messageBox.classList.toggle("hidden");
-  messageBox.classList.toggle("show");
-});
-menuBtn.addEventListener("click", (e) => {
-  navLinks.classList.toggle("open");
-  const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
-});
